@@ -1,12 +1,14 @@
 // import logo from './logo.svg';
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import { useData } from "./context/DataContext";
 import { ProductListing } from "./pages/productListing/ProductListing";
 import { products } from "./data/data.json";
+import { Cart } from "./pages/cart/Cart";
 
 function App() {
   const { dispatch } = useData();
+  const [route, setRoute] = useState("home");
 
   useEffect(() => {
     dispatch({ type: "INITIALIZE_PRODUCTS", payload: products });
@@ -14,7 +16,8 @@ function App() {
 
   return (
     <div className="App">
-      <ProductListing />
+      {route === "home" && <ProductListing />}
+      {route === "cart" && <Cart />}
     </div>
   );
 }

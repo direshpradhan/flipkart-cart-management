@@ -1,7 +1,11 @@
 import React from "react";
+import { useData } from "../../../../context/DataContext";
 import styles from "./ProductCard.module.css";
 
 export const ProductCard = ({ product }) => {
+  const { dispatch, cart } = useData();
+  const isInCart = cart.find((cartItem) => cartItem.id === product.id);
+
   return (
     <>
       <div className={`${styles.main}`}>
@@ -15,7 +19,16 @@ export const ProductCard = ({ product }) => {
           <p className={`${styles.price}`}>&#8377;{product.price}</p>
           <p className={`${styles.discount}`}>{product.discount} %</p>
         </div>
-        <button className={`${styles.button}`}>Add to Cart</button>
+        {isInCart ? (
+          <button className={`${styles.button}`}>Go to Cart</button>
+        ) : (
+          <button
+            className={`${styles.button}`}
+            onClick={() => dispatch({ type: "ADD_TO_CART", payload: product })}
+          >
+            Add to Cart
+          </button>
+        )}
       </div>
     </>
   );
