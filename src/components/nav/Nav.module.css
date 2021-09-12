@@ -1,0 +1,16 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  background-color: #1d4ed8;
+  color: white;
+  align-items: center;
+  height: 10vh;
+  margin-bottom: 1rem;
+}
+
+.link {
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+}

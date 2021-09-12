@@ -5,6 +5,7 @@ import { useData } from "./context/DataContext";
 import { ProductListing } from "./pages/productListing/ProductListing";
 import { products } from "./data/data.json";
 import { Cart } from "./pages/cart/Cart";
+import { Nav } from "./components/nav/Nav";
 
 function App() {
   const { dispatch } = useData();
@@ -16,6 +17,7 @@ function App() {
 
   return (
     <div className="App">
+      <Nav setRoute={setRoute} />
       {route === "home" && <ProductListing />}
       {route === "cart" && <Cart />}
     </div>
