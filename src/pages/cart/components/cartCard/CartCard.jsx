@@ -45,8 +45,24 @@ export const CartCard = ({ cartItem }) => {
           <p className={`${styles.discount}`}>{cartItem.discount} %</p>
         </div>
 
-        <button className={`${styles.btn}`}>Save for Later</button>
-        <button className={`${styles.btn}`}>Remove from Cart</button>
+        <button
+          className={`${styles.btn}`}
+          onClick={() => {
+            dispatch({ type: "REMOVE_FROM_CART", payload: cartItem.id });
+            dispatch({ type: "ADD_TO_SAVE_LATER", payload: cartItem });
+          }}
+        >
+          Save for Later
+        </button>
+
+        <button
+          className={`${styles.btn}`}
+          onClick={() =>
+            dispatch({ type: "REMOVE_FROM_CART", payload: cartItem.id })
+          }
+        >
+          Remove from Cart
+        </button>
       </div>
     </div>
   );

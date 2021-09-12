@@ -10,7 +10,12 @@ export const DataContextProvider = ({ children }) => {
 
   return (
     <DataContext.Provider
-      value={{ cart: state.cart, products: state.products, dispatch }}
+      value={{
+        cart: state.cart,
+        products: state.products,
+        saveLater: state.saveLater,
+        dispatch,
+      }}
     >
       {children}
     </DataContext.Provider>

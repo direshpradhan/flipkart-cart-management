@@ -1,7 +1,7 @@
 export const initialState = {
   products: [],
   cart: [],
-  saveForLater: [],
+  saveLater: [],
 };
 
 export const dataReducer = (state, { type, payload }) => {
@@ -37,6 +37,30 @@ export const dataReducer = (state, { type, payload }) => {
       });
 
       return { ...state, cart: newDecrementedCart };
+
+    case "REMOVE_FROM_CART":
+      const newFilteredCart = state.cart.filter(
+        (cartItem) => cartItem.id !== payload
+      );
+      return { ...state, cart: newFilteredCart };
+
+    case "ADD_TO_SAVE_LATER":
+      const isInSaveLater = state.saveLater.find(
+        (saveItem) => saveItem.id === payload.id
+      );
+      if (!isInSaveLater) {
+        return { ...state, saveLater: [...state.saveLater, payload] };
+      }
+      return state;
+
+    case "REMOVE_FROM_SAVE_LATER":
+      const newFilteredSaveLater = state.saveLater.filter(
+        (saveItem) => saveItem.id !== payload
+      );
+      return { ...state, saveLater: newFilteredSaveLater };
+
+    case "MOVE_TO_CART":
+      return { ...state, cart: [...state.cart, payload] };
 
     default:
       return state;
