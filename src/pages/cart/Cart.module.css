@@ -1,4 +1,22 @@
 .card_container {
   width: 50%;
+}
+
+.cart {
+  display: flex;
   margin: 2rem;
+  gap: 5rem;
+}
+
+.saveLater {
+  margin: 2rem;
+}
+
+.pricing {
+  width: 30%;
+}
+
+.prices {
+  display: flex;
+  justify-content: space-between;
 }

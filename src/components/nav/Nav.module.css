@@ -9,6 +9,10 @@
   margin-bottom: 1rem;
 }
 
+.navigation > h2 {
+  cursor: pointer;
+}
+
 .link {
   display: flex;
   gap: 1rem;
