@@ -16,7 +16,7 @@ function App() {
   }, [dispatch]);
 
   return (
-    <div className="App">
+    <div className="">
       <Nav setRoute={setRoute} />
       {route === "home" && <ProductListing />}
       {route === "cart" && <Cart />}

@@ -1,0 +1,68 @@
+.card {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.img {
+  width: 150px;
+  height: 200px;
+}
+
+.quantity {
+  text-align: center;
+}
+
+.details {
+}
+
+.brand {
+  color: gray;
+  font-weight: 650;
+  font-size: 1.05rem;
+}
+
+.name {
+  font-weight: 500;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  margin-bottom: 0.5rem;
+}
+
+.pricing {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.discounted_price,
+.price,
+.discount {
+  display: inline;
+  margin-right: 0.25rem;
+}
+
+.price {
+  text-decoration: line-through;
+}
+
+.discount {
+  color: green;
+}
+
+.quantity_btn {
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  margin: 0 0.25rem;
+  border: none;
+  background-color: lightgray;
+}
+
+.btn {
+  padding: 0.25rem;
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+}
