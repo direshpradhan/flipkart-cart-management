@@ -1,0 +1,52 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  place-items: center;
+}
+
+.img {
+  width: 250px;
+  height: 350px;
+}
+
+.details {
+  width: 75%;
+}
+
+.brand {
+  color: gray;
+  font-weight: 650;
+  font-size: 1.05rem;
+}
+
+.name {
+  font-weight: 500;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  margin-bottom: 0.5rem;
+}
+
+.discounted_price,
+.price,
+.discount {
+  display: inline;
+  margin-right: 0.25rem;
+}
+
+.price {
+  text-decoration: line-through;
+}
+
+.discount {
+  color: green;
+}
+
+.button {
+  width: 75%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}

@@ -1,0 +1,58 @@
+{
+  "products": [
+    {
+      "id": "a",
+      "name": "Solid Men Polo Neck Green T-Shirt",
+      "brand": "Allen Solly",
+      "price": 899,
+      "discountedPrice": 449,
+      "discount": 50,
+      "imgURL": "https://rukminim1.flixcart.com/image/800/960/k12go7k0/t-shirt/t/e/n/s-askporgfv50207-allen-solly-original-imafkzsjpc8mhjhu.jpeg?q=50"
+    },
+    {
+      "id": "b",
+      "name": "Striped Men Hooded Neck Red, Black T-Shirt",
+      "brand": "Helmont",
+      "price": 999,
+      "discountedPrice": 201,
+      "discount": 71,
+      "imgURL": "https://rukminim1.flixcart.com/image/800/960/kf1fo280hlty2aw-0/t-shirt/w/s/e/-original-imafdfvvr8hqdu65.jpeg?q=50"
+    },
+    {
+      "id": "c",
+      "name": "Solid Men Mandarin Collar White, Black T-Shirt",
+      "brand": "FastColors",
+      "price": 1999,
+      "discountedPrice": 295,
+      "discount": 85,
+      "imgURL": "https://rukminim1.flixcart.com/image/800/960/kjuby4w0/t-shirt/s/x/z/m-fc4058-fastcolors-original-imafzbj546kdvbh8.jpeg?q=50"
+    },
+    {
+      "id": "d",
+      "name": "Printed Men Hooded Neck Dark Green, Black T-Shirt",
+      "brand": "TRIPR",
+      "price": 1999,
+      "discountedPrice": 250,
+      "discount": 87,
+      "imgURL": "https://rukminim1.flixcart.com/image/800/960/kd69z0w0/t-shirt/u/t/q/xl-togr-blhdful-believer-tripr-original-imafu4ybfwdqhqfm.jpeg?q=50"
+    },
+    {
+      "id": "e",
+      "name": "Solid Men Polo Neck White T-Shirt",
+      "brand": "Allen Solly",
+      "price": 899,
+      "discountedPrice": 449,
+      "discount": 50,
+      "imgURL": "https://rukminim1.flixcart.com/image/800/960/k1118cw0/t-shirt/h/p/z/xl-askporgfp82490-allen-solly-original-imafkztf2tt2uucx.jpeg?q=50"
+    },
+    {
+      "id": "f",
+      "name": "Striped Men Round Neck White, Blue T-Shirt",
+      "brand": "FastColors",
+      "price": 1999,
+      "discountedPrice": 279,
+      "discount": 86,
+      "imgURL": "https://rukminim1.flixcart.com/image/800/960/kfoapow0-0/t-shirt/r/l/a/xxl-fc4070-fastcolors-original-imafw2jymrdyxcs2.jpeg?q=50"
+    }
+  ]
+}
